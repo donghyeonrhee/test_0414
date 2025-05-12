@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="pyramid"></div>
+
+  <script>
+    const height = 5; 
+    const pyramid = document.getElementById("pyramid");
+
+    for (let i = 1; i <= height; i++) {
+      const spaces = ' '.repeat(height - i);
+      const stars = '*'.repeat(i * 2 - 1);
+      pyramid.innerText += spaces + stars + '\n';
+    }
+  </script>
+</body>
+</html>
